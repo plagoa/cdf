@@ -189,8 +189,8 @@ define([
     //webAppPath: undefined,
 
     /**
-     * @summary The {@link cdf.dashboard.RefreshEngine|RefreshEngine} that manages the component refresh cycle.
-     * @description The {@link cdf.dashboard.RefreshEngine|RefreshEngine} that manages the component refresh cycle.
+     * @summary The {@link cdf.dashboard.RefreshEngine|RefreshEngine} which manages the component refresh cycle.
+     * @description The {@link cdf.dashboard.RefreshEngine|RefreshEngine} which manages the component refresh cycle.
      *
      * @protected
      * @type {cdf.dashboard.RefreshEngine}
@@ -199,8 +199,8 @@ define([
 
 
     /**
-     * @summary Determines if components and params are retrieved from the _window_ object or from the dashboard instance
-     * @description Determines if components and params are retrieved from the _window_ object or from the dashboard instance
+     * @summary Determines if components and parameters are retrieved from the _window_ object or from the dashboard instance.
+     * @description Determines if components and parameters are retrieved from the _window_ object or from the dashboard instance.
      *
      * @type {boolean}
      * @default false
@@ -249,8 +249,8 @@ define([
     viewObj: module.config().view,
 
     /**
-     * @summary Legacy dashboard components don't have priority, so we'll assign a very low priority to them.
-     * @description Legacy dashboard components don't have priority, so we'll assign a very low priority to them.
+     * @summary Legacy dashboard components do not have priority, so we will assign a very low priority to them.
+     * @description Legacy dashboard components do not have priority, so we will assign a very low priority to them.
      *
      * @type {number}
      * @default -1000
@@ -318,12 +318,12 @@ define([
     /**
      * @summary Sets the {@link cdf.dashboard.Dashboard#debug|debug} level.
      * @description Sets the {@link cdf.dashboard.Dashboard#debug|debug} level. If the URL parameter _debug_ 
-     *              has value _true_ and the value of the URL parameter _debugLevel_ is a valid numeric value 
+     *              has value of _true_ and the value of the URL parameter _debugLevel_ is a valid numeric value,  
      *              it will set the debug level according to the latter. If an error occurs while reading 
-     *              the URL parameters, or _debug_ is not set to _true_, the debug level is set to 1. 
+     *              the URL parameters, or _debug_ is not set to _true_, the debug level is set to _1_. 
      *
-     * @return {number} The new {@link cdf.dashboard.Dashboard#debug|debug} level value according to the _debugLevel_ URL parameter,
-     *                  1 if an error occurs while parsing the URL, if _debugLevel_ has an invalid numeric value
+     * @return {number} The new {@link cdf.dashboard.Dashboard#debug|debug} level value according to the _debugLevel_ URL parameter.
+     *                  It is _1_ if an error occurs while parsing the URL, if the _debugLevel_ has an invalid numeric value, 
      *                  or if the _debug_ parameter is not set to _true_.
      */
     syncDebugLevel: function() {

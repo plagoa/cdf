@@ -113,8 +113,8 @@ define([
 
     /**
      * @summary Sets a pair parameter/value as bookmarkable.
-     * @description <p>It sets `parameter` as bookmarkable, with value = `true` or `value` if
-     *              provided</p>
+     * @description <p>It sets `parameter` as bookmarkable, with value=`true` or `value` if
+     *              provided.</p>
      *
      * @param {string} parameter The name of the parameter to be stored.
      * @param {Object}      [value]     The value for the parameter.
@@ -128,19 +128,19 @@ define([
     },
 
     /**
-     * @summary Checks if a `parameter` is bookmarkable.
-     * @description Checks if a `parameter` is bookmarkable.
+     * @summary Checks if a 'parameter' is bookmarkable.
+     * @description Checks if a 'parameter' is bookmarkable.
      *
      * @param {string} parameter The parameter name.
-     * @return {boolean} `true` if `parameter` is bookmarkable, `false` otherwise.
+     * @return {boolean} 'true' if 'parameter' is bookmarkable, 'false' otherwise.
      */
     isBookmarkable: function(parameter) {
       return Boolean(this.bookmarkables[parameter]);
     },
 
     /**
-     * @summary Generates a bookmark state using values stored.
-     * @description Generates a bookmark state using values stored.
+     * @summary Generates a bookmark state using stored values.
+     * @description Generates a bookmark state using stored values.
      *
      * @return {Object} An object with the state of the parameters previously marked as bookmarkable.
      */
@@ -182,8 +182,8 @@ define([
     },
 
     /**
-     * @summary Overrides a bookmark state with a given `state`.
-     * @description Overrides a bookmark state with a given `state`.
+     * @summary Overrides a bookmark state with a given 'state'.
+     * @description Overrides a bookmark state with a given 'state'.
      *
      * @param {Object} state The new state to override the existing state.
      */
@@ -207,8 +207,8 @@ define([
     },
 
     /**
-     * @summary Gets the bookmark state url decoded.
-     * @description Gets the bookmark state url decoded.
+     * @summary Gets the bookmark state URL decoded.
+     * @description Gets the bookmark state URL decoded.
      *
      * @return {Object} An object with the current bookmark state.
      */
