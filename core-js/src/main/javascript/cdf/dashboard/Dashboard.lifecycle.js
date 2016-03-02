@@ -733,7 +733,7 @@ define([
 
     /**
      * @summary Changes the value of a parameter, triggering a
-     *          {@link cdf.dashboard.Dashboard#event:"<em>parameterName</em>:fireChange"|'parameter':fireChange} event.
+     *          {@link cdf.dashboard.Dashboard#event:"<em>parameterName</em>:fireChange"|`parameter`:fireChange} event.
      * @description <p>Changes the value of a parameter with the provided name. Triggers the
      *              {@link cdf.dashboard.Dashboard#event:"<em>parameterName</em>:fireChange"|`parameter`:fireChange}
      *              event and updates the components which listen for changes on the aforementioned parameter.</p>

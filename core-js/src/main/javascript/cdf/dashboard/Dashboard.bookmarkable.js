@@ -128,11 +128,11 @@ define([
     },
 
     /**
-     * @summary Checks if a 'parameter' is bookmarkable.
-     * @description Checks if a 'parameter' is bookmarkable.
+     * @summary Checks if a `parameter` is bookmarkable.
+     * @description Checks if a `parameter` is bookmarkable.
      *
      * @param {string} parameter The parameter name.
-     * @return {boolean} 'true' if 'parameter' is bookmarkable, 'false' otherwise.
+     * @return {boolean} `true` if `parameter` is bookmarkable, `false` otherwise.
      */
     isBookmarkable: function(parameter) {
       return Boolean(this.bookmarkables[parameter]);
@@ -182,8 +182,8 @@ define([
     },
 
     /**
-     * @summary Overrides a bookmark state with a given 'state'.
-     * @description Overrides a bookmark state with a given 'state'.
+     * @summary Overrides a bookmark state with a given `state`.
+     * @description Overrides a bookmark state with a given `state`.
      *
      * @param {Object} state The new state to override the existing state.
      */

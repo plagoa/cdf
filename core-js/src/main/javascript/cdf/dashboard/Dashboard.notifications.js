@@ -93,8 +93,8 @@ define([
     },
 
     /**
-     * @summary Renders a blocking div that can be dragged.
-     * @description Renders a blocking div that can be dragged.
+     * @summary Renders a blocking div which can be dragged.
+     * @description Renders a blocking div which can be dragged.
      */
     blockUIwithDrag: function() {
       if(typeof this.i18nSupport !== "undefined" && this.i18nSupport != null) {

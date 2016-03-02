@@ -117,10 +117,10 @@ define([
     /**
      * @summary Adds an instance of a component to the dashboard.
      * @description <p>Adds an instance of {@link cdf.components.BaseComponent|BaseComponent} to the dashboard
-     *              components array if it wasn't already added.<p>
-     *              <p>If the 'component' does not have a valid property 'component.name', or if the property is not
+     *              components array if it was not already added.<p>
+     *              <p>If the `component` does not have a valid property `component.name`, or if the property is not
      *              a valid string, an exception is thrown.</p>
-     *              <p>The <code>options</code> parameter is optional and on his absence, the component is added
+     *              <p>The <code>options</code> parameter is optional and when it is absent, the component is added
      *              to the end of the components array. The same rule is applied if `options.index` is false.
      *              If not, the new component is appended to the array at position `options.index`. </p>
      * @param {cdf.components.BaseComponent} component The new component to be added.

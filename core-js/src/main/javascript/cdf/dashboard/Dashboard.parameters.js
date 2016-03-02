@@ -47,16 +47,16 @@ define([
     parameterModel: undefined,
 
     /**
-     * @summary Store of pairs, parameter master name - parameter slave name
-     * @description Store of pairs, parameter master name - parameter slave name
+     * @summary Store of pairs: parameter master name - parameter slave name
+     * @description Store of pairs: parameter master name - parameter slave name
      * @type {Array<Object>}
      * @private
      */
     chains: undefined,
 
     /**
-     * @summary Store of synced key value pairs, parameter name - parameter value.
-     * @description <p>Store of key value pairs, parameter name - parameter value.</p>
+     * @summary Store of synced key value pairs: parameter name - parameter value.
+     * @description <p>Store of key value pairs: parameter name - parameter value.</p>
      * @type {Object}
      * @private
      */
@@ -250,7 +250,7 @@ define([
     },
 
     /**
-     * @summary Adds a new parameter to the parameter module
+     * @summary Adds a new parameter to the parameter module.
      * @description <p>Adds a new parameter to the parameter module.</p>
      *              <p>Receives a parameter name and an initial value, which will be used
      *              if the parameter is not available in the parameter model. Otherwise,

@@ -324,8 +324,8 @@ define([
     },
 
     /**
-     * @summary Fetches data from the server according to a Chart Definition 'object'.
-     * @description Fetches data from the server according to a Chart Definition 'object'.
+     * @summary Fetches data from the server according to a Chart Definition `object`.
+     * @description Fetches data from the server according to a Chart Definition `object`.
      *              This method is deprecated, so a {@link cdf.dashboard.Query|Query}
      *              instance should be used instead.
      *

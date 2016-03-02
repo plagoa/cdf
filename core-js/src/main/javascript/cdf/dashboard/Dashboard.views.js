@@ -45,7 +45,7 @@ define([
      * @summary A view is a snapshot of the dashboard parameter's state, useful
      *          to restore a dashboard to a previous state.
      * @description <p>Holds a snapshot of the dashboard parameter's state,
-     *              and useful to restore a dashboard to a previous state.</p>
+     *              which is useful to restore a dashboard to a previous state.</p>
      *              <p>It can be initialized in two different ways. The main way is via
      *              the dashboard constructor. If not, it will be initialized via the
      *              {@link cdf.dashboard.Dashboard|Dashboard} AMD module configuration.</p>
