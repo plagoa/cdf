@@ -39,13 +39,13 @@ define([
 
   /**
    * @class cdf.queries.LegacyQuery
-   * @classdesc <p>Class that represents MDX, SQL and legacy (calling xactions) queries.
+   * @classdesc <p>Class that represents MDX, SQL, and legacy (calling xactions) queries.
    *            These will be registered globally using the static dashboard function
    *            {@link cdf.dashboard.Dashboard.registerGlobalQuery|registerGlobalQuery}.</p>
    *            <p>The constructors are created dynamically and registered
    *            in the dashboard query container
    *            {@link cdf.dashboard.Dashboard#queryFactories|queryFactories}.</p>
-   *            <p>To create new MDX, SQL or legacy queries use the dashboard function
+   *            <p>To create new MDX, SQL, or legacy queries, use the dashboard function
    *            {@link cdf.dashboard.Dashboard#getQuery|getQuery}.</p>
    * @staticClass
    * @extends cdf.queries.BaseQuery

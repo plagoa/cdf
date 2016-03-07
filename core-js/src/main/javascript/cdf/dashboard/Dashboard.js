@@ -28,16 +28,16 @@ define([
      * @summary Base abstract dashboard class. It should not be required or instantiated directly.
      * @classdesc <p>Base abstract dashboard class. This class is abstract, so it should not be required
      *            or instantiated directly.</p>
-     *            <p>Instead use one of its extending subclasses: {@link cdf.Blueprint|Blueprint},
+     *            <p>Instead, use one of its extending subclasses: {@link cdf.Blueprint|Blueprint},
      *            {@link cdf.Bootstrap|Bootstrap} or {@link cdf.Clean|Clean}.</p>
      *            <p>Each dashboard instance can be localized by adding, in the same directory,
      *            the following properties files:</p>
      *            <ul><li>messages&#95;supported&#95;languages.properties - Defines supported languages,
-     *            if not present, i18n support will not be loaded, eg. <pre>en=English
+     *            if not present, i18n support will not be loaded, for example: <pre>en=English
      * pt=Portuguese</pre></li>
-     *            <li>messages.properties - Default messages file, eg. <pre>
+     *            <li>messages.properties: Default messages file, for example: <pre>
      * myDashboard.title=Default title</pre></li>
-     *            <li>messages&#95;[language&#95;code].properties - Language code messages file, eg. <pre>
+     *            <li>messages&#95;[language&#95;code].properties: Language code messages file, for example: <pre>
      * myDashboard.title=Title # for messages_en.properties
      * myDashboard.title=Título # for messages_pt.properties</pre></li></ul>
      *            <p>Usage:</p>
