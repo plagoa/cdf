@@ -28,20 +28,20 @@ define([
      * @summary Base abstract dashboard class. It should not be required or instantiated directly.
      * @classdesc <p>Base abstract dashboard class. This class is abstract, so it should not be required
      *            or instantiated directly.</p>
-     *            <p>Instead use one of its extending subclasses: {@link cdf.Blueprint|Blueprint},
+     *            <p>Instead, use one of its extending subclasses: {@link cdf.Blueprint|Blueprint},
      *            {@link cdf.Bootstrap|Bootstrap} or {@link cdf.Clean|Clean}.</p>
      *            <p>Each dashboard instance can be localized by adding, in the same directory,
      *            the following properties files:</p>
      *            <ul><li>messages&#95;supported&#95;languages.properties - Defines supported languages,
-     *            if not present, i18n support will not be loaded, eg. <pre function="syntax.text">en=English<br>
+     *            if not present, i18n support will not be loaded, for example: <pre>en=English
      * pt=Portuguese</pre></li>
-     *            <li>messages.properties - Default messages file, eg. <pre function="syntax.text">
+     *            <li>messages.properties: Default messages file, for example: <pre>
      * myDashboard.title=Default title</pre></li>
-     *            <li>messages&#95;[language&#95;code].properties - Language code messages file, eg. <pre function="syntax.text">
-     * myDashboard.title=Title # for messages_en.properties<br>
+     *            <li>messages&#95;[language&#95;code].properties: Language code messages file, for example: <pre>
+     * myDashboard.title=Title # for messages_en.properties
      * myDashboard.title=Título # for messages_pt.properties</pre></li></ul>
      *            <p>Usage:</p>
-     *            <pre function="syntax.javascript">dashboard.i18nSupport.prop("myDashboard.title");</pre>
+     *            <pre>dashboard.i18nSupport.prop("myDashboard.title");</pre>
      *
      * @constructs
      * @description Abstract constructor for the Dashboard object.
@@ -189,8 +189,8 @@ define([
     //webAppPath: undefined,
 
     /**
-     * @summary The {@link cdf.dashboard.RefreshEngine|RefreshEngine} that manages the component refresh cycle.
-     * @description The {@link cdf.dashboard.RefreshEngine|RefreshEngine} that manages the component refresh cycle.
+     * @summary The {@link cdf.dashboard.RefreshEngine|RefreshEngine} which manages the component refresh cycle.
+     * @description The {@link cdf.dashboard.RefreshEngine|RefreshEngine} which manages the component refresh cycle.
      *
      * @protected
      * @type {cdf.dashboard.RefreshEngine}
@@ -199,8 +199,8 @@ define([
 
 
     /**
-     * @summary Determines if components and params are retrieved from the _window_ object or from the dashboard instance
-     * @description Determines if components and params are retrieved from the _window_ object or from the dashboard instance
+     * @summary Determines if components and parameters are retrieved from the _window_ object or from the dashboard instance.
+     * @description Determines if components and parameters are retrieved from the _window_ object or from the dashboard instance.
      *
      * @type {boolean}
      * @default false
@@ -249,8 +249,8 @@ define([
     viewObj: module.config().view,
 
     /**
-     * @summary Legacy dashboard components don't have priority, so we'll assign a very low priority to them.
-     * @description Legacy dashboard components don't have priority, so we'll assign a very low priority to them.
+     * @summary Legacy dashboard components do not have priority, so we will assign a very low priority to them.
+     * @description Legacy dashboard components do not have priority, so we will assign a very low priority to them.
      *
      * @type {number}
      * @default -1000
@@ -318,12 +318,12 @@ define([
     /**
      * @summary Sets the {@link cdf.dashboard.Dashboard#debug|debug} level.
      * @description Sets the {@link cdf.dashboard.Dashboard#debug|debug} level. If the URL parameter _debug_ 
-     *              has value _true_ and the value of the URL parameter _debugLevel_ is a valid numeric value 
+     *              has value of _true_ and the value of the URL parameter _debugLevel_ is a valid numeric value,  
      *              it will set the debug level according to the latter. If an error occurs while reading 
-     *              the URL parameters, or _debug_ is not set to _true_, the debug level is set to 1. 
+     *              the URL parameters, or _debug_ is not set to _true_, the debug level is set to _1_. 
      *
-     * @return {number} The new {@link cdf.dashboard.Dashboard#debug|debug} level value according to the _debugLevel_ URL parameter,
-     *                  1 if an error occurs while parsing the URL, if _debugLevel_ has an invalid numeric value
+     * @return {number} The new {@link cdf.dashboard.Dashboard#debug|debug} level value according to the _debugLevel_ URL parameter.
+     *                  It is _1_ if an error occurs while parsing the URL, if the _debugLevel_ has an invalid numeric value, 
      *                  or if the _debug_ parameter is not set to _true_.
      */
     syncDebugLevel: function() {
@@ -364,21 +364,21 @@ define([
 
     /**
      * @summary Gets the dashboard's wcdfSettings.
-     * @description Gets the dashboard's wcdfSettings. It will be overridden returning 
+     * @description Gets the dashboard's wcdfSettings. It will be overriden returning 
      *              the proper wcdf settings in embedded scenarios.
      * 
      * @abstract
      * @return {Object} The dashboard's wcdf settings object.
      */
     getWcdfSettings: function() {
-      Logger.info("getWcdfSettings was not overridden, returning empty object");
+      Logger.info("getWcdfSettings was not overriden, returning empty object");
       return {};
     },
 
     /**
      * @summary Normalizes an HTML element identifier.
      * @description  Normalizes an HTML element identifier. This method is meant to be used when 
-     *               we need to directly manipulate an HTML element. It will be overridden returning 
+     *               we need to directly manipulate an HTML element. It will be overriden returning 
      *               the proper identifier in embedded scenarios.
      *
      * @abstract
